@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Eagle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Eagle</div>
+    <div class="sidecenter">
+      <a onclick="scrollToSection4()">الاسعار</a>
+      <a onclick="scrollToSection3()">المستقبل</a>
+      <a onclick="scrollToSection2()">الخدمات</a>
+      <a onclick="scrollToSection1()">الرئيسية</a>
+    </div>
+    <div class="sideright">
+    <button>ابدأ الان</button>
+    <div class="siedmgn">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="menunone">
+    <div class="sidecentermenunone">
+      <a  onclick="scrollToSection1()">الرئيسية</a>
+      <a  onclick="scrollToSection2()">الخدمات</a>
+      <a  onclick="scrollToSection3()">المستقبل</a>
+      <a  onclick="scrollToSection4()">الاسعار</a>
+    </div>
+  </div>
+  <header id="main-header" class="main-header">
+    <div class="container">
+      <h1 class="main-title">  </h1>
+      <p class="main-description">
+        نقدم أفضل الحلول الرقمية لتطوير أعمالك. ابدأ رحلتك معنا اليوم!
+      </p>
+      <a  class="btn btn-primary" onclick="scrollToSection4()">خطط الاسعار</a>
+    </div>
+  </header>
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+  </div>
+  
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">خدماتنا</h2>
+      <div class="services-list">
+        <div class="service">
+          <i class="icon fa fa-code"></i>
+          <h3>تصميم المواقع</h3>
+          <p>نقوم بتصميم مواقع عصرية ومناسبة لجميع الأجهزة باستخدام أحدث التقنيات.</p>
+        </div>
+        <div class="service">
+          <i class="icon fa fa-paint-brush"></i>
+          <h3>تصميم ملف شخصي</h3>
+          <p>تصاميم جذابة وفريدة تعكس هويتك .</p>
+        </div>
+        <div class="service">
+          <i class="icon fa fa-mobile"></i>
+          <h3>تطوير المنصات</h3>
+          <p>نطور منصات مبتكرة وسهلة الاستخدام لمختلف الأنظمة.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <section id="future" class="future">
+    <div class="container">
+      <h2 class="section-title">رؤيتنا المستقبلية</h2>
+      <p class="section-description">
+        نسعى لتحقيق مستقبل مشرق من خلال الابتكار والإبداع. هدفنا هو تحسين حياة عملائنا وتقديم أفضل الحلول التقنية.
+      </p>
+      <div class="future-content">
+        <div class="future-item">
+          <i class="icon fa fa-rocket"></i>
+          <h3>الابتكار المستمر</h3>
+          <p>تطوير تقنيات جديدة تلبي احتياجات المستقبل.</p>
+        </div>
+        <div class="future-item">
+          <i class="icon fa fa-globe"></i>
+          <h3>التوسع العالمي</h3>
+          <p>الوصول إلى الأسواق العالمية وتعزيز تواجدنا الرقمي.</p>
+        </div>
+        <div class="future-item">
+          <i class="icon fa fa-users"></i>
+          <h3>تمكين المجتمعات</h3>
+          <p>تقديم حلول تسهم في تحسين جودة الحياة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="section-title">خطط الأسعار</h2>
+      <p class="section-description">
+        اختر الخطة التي تناسب احتياجاتك. نحن نقدم أفضل الخيارات لتلبية جميع المتطلبات.
+      </p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 class="plan-title">الخطة الأساسية</h3>
+          <p class="price">100<span>جنيه/شهر</span></p>
+          <ul class="features">
+            <li>تصميم موقع بسيط</li>
+            <li>دعم فني 24/7</li>
+            <li>نطاق مجاني</li>
+          </ul>
+          <button class="btn">اشترك الآن</button>
+        </div>
+        <div class="pricing-card featured">
+          <h3 class="plan-title">الخطة المميزة</h3>
+          <p class="price">200<span>جنيه/شهر</span></p>
+          <ul class="features">
+            <li>تصميم موقع احترافي</li>
+            <li>دعم فني 24/7</li>
+            <li>استضافة مجانية</li>
+            <li>ميزات إضافية</li>
+          </ul>
+          <button class="btn">اشترك الآن</button>
+        </div>
+        <div class="pricing-card">
+          <h3 class="plan-title">الخطة المتقدمة</h3>
+          <p class="price">300<span>جنيه/شهر</span></p>
+          <ul class="features">
+            <li>تصميم موقع مخصص</li>
+            <li>دعم فني مميز</li>
+            <li>استضافة ونطاق مجاني</li>
+            <li>إدارة المحتوى</li>
+          </ul>
+          <button class="btn">اشترك الآن</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <h2 class="footer-title">شكرًا لزيارتكم</h2>
+      <p class="footer-description">
+        نتمنى أن تكونوا قد استفدتم من خدماتنا. تابعونا عبر وسائل التواصل الاجتماعي لمزيد من التحديثات.
+      </p>
+      <ul class="social-links">
+        <li><a href="#" class="social-link"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+      <p class="copyright">
+        &copy; 2024 Eagle جميع الحقوق محفوظة. تصميم وإبداع بواسطة.
+      </p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <script>
+    function scrollToSection1() {
+      const section = document.querySelector('#main-header');
+      section.scrollIntoView({ behavior: 'smooth' });
+    };
+    function scrollToSection2() {
+      const section = document.querySelector('#services');
+      section.scrollIntoView({ behavior: 'smooth' });
+    };
+    function scrollToSection3() {
+      const section = document.querySelector('#future');
+      section.scrollIntoView({ behavior: 'smooth' });
+    };
+    function scrollToSection4() {
+      const section = document.querySelector('#pricing');
+      section.scrollIntoView({ behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

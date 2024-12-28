@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eagle - إنشاء الموقع</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* تنسيق الصفحة بالكامل */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 500px;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .form-container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-container label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-container input, 
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-container textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>إنشاء موقع جديد</h1>
+    <form id="createWebsiteForm" onsubmit="handleSubmit(event)">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+
+      <label for="phone">رقم الهاتف:</label>
+      <input type="text" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required>
+
+      <label for="description">ماذا تريد أن تصمم؟</label>
+      <textarea id="description" name="description" placeholder="صف متطلبات التصميم" required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+
+  <script>
+    // دالة لإرسال البيانات
+    function handleSubmit(event) {
+      event.preventDefault(); // منع إعادة تحميل الصفحة
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const description = document.getElementById('description').value;
+
+      if (name && phone && description) {
+        alert(`تم إرسال طلبك بنجاح:\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالتصميم المطلوب: ${description}`);
+        document.getElementById('createWebsiteForm').reset(); // إعادة تعيين النموذج
+      } else {
+        alert('يرجى ملء جميع الحقول.');
+      }
+    }
+  </script>
+</body>
+</html>
